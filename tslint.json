@@ -1,9 +1,19 @@
 {
-  "extends": "tslint:recommended",
+  "extends": [
+    "tslint:recommended",
+    "tslint-plugin-prettier"
+  ],
   "rules": {
     "max-line-length": {
       "options": [120]
     },
+    "prettier": [
+      true,
+      {
+        "singleQuote": true,
+        "trailingComma": "all"
+      }
+    ],
     "quotemark": [true, "single"],
     "object-literal-sort-keys": false,
     "arrow-parens": [true, "ban-single-arg-parens"],
